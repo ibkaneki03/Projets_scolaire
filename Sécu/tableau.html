@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tableau</title>
+</head>
+<body>
+    <center>
+        <h1>Tableau</h1>
+        <p>
+            Ecrir une fontion qui permet de recevoir un tableau et de retourner sa moyenne. Faites appel à cette fonction. <br>
+            Pour avoir la longueur du tableau : nomTableau.length.      
+        </p>
+
+        <script type="text/javascript">
+            function moyenne(tab){
+                var somme = 0;
+                for (var i = 0; i < tab.length; i++) {
+                    somme = somme + tab[i];
+                }
+                return somme / tab.length; 
+
+            }
+            var tableau = [];
+            var n = parseInt(prompt("Entrez le nombre d'éléments du tableau :"));
+            for (var i = 0; i < n; i++) {
+                var valeur = parseFloat(prompt("Entrez la valeur " + (i+1) + " :"));
+                tableau.push(valeur);
+            }
+            alert("La moyenne est : " + moyenne(tableau));
+        </script>
+    </center>
+</body>
+</html>

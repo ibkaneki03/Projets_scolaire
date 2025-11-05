@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diviseurs</title>
+</head>
+<body>
+    <center>
+        <h1> Divisseurs </h1>
+        <p>Ecrire une procédure qui rçoit un entier et affiche ses divieseurs. Faites appel à cette procéddure </p>
+        <script>
+            function mesDiviseurs(nb) {
+                var div;
+                var message = "Les diviseurs sont : ";
+
+                for (div= 1; div <= nb; div ++) {
+                    if (nb % div == 0) {
+                        //alert("diviseur : " + div);
+                        message = message + div + ",";
+                    }
+                }
+                alert(message);
+            }
+            // programme principal
+            var nb, div;
+            nb = parseInt(prompt("Entrez un entier :"));
+            // appel de la procédure
+            mesDiviseurs(nb);
+        </script>
+    </center>
+</body>
+</html>

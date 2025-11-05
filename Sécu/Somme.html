@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Somme</title>
+</head>
+<body>
+    <center>
+        <h1> fonction somme </h1>
+        <p>Ecrire une fonction qui permet de recevoir deux limites et retourner la somme des nombres compris entre les deu limites. Faites appel à cette fonction.
+        </p>
+
+    <script type="text/javascript">
+        function somme (lim1, lim2){
+            var s, i;  
+            s= 0;
+            for (i = lim1; i <= lim2; i++) {
+                s = s + i;
+            }
+            return s;   
+        }
+        var a,b;
+        a = parseInt(prompt("Entrez la première limite :"));
+        b = parseInt(prompt("Entrez la deuxième limite :"));
+        // appel de la fonction
+        alert("La somme des entiers est : " + somme(a,b));
+    </script>
+
+    </center>
+</body>
+</html>

@@ -1,0 +1,3 @@
+cd /d C:\xamp\htdocs\Cours_IRIS
+cl /nologo /W3 /EHsc snake.c /Fe:snake.exe
+snake.exe
